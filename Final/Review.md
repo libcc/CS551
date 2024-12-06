@@ -35,7 +35,7 @@ This write up will summarize and categorize important knowledge about system pro
 	  - Every system call is defined inside the **header** file, which can have conflicts due the implementation of the OS version, so sometimes a header file needs to be adjusted to work properly. 
 	  - Other languages also have standard facilities to support some POSIX facilities. 
 	  - Several tips for system call usages:
-		  - include header (废话);
+		  - include header;
 		  - do error handling, maybe use `perror` really convenient;
 		  - `cast` is not very safe, it will suppress compiler warning if the types don't match;  
 		  - check if call is thread safe;
