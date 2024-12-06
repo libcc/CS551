@@ -221,7 +221,7 @@ This write up will summarize and categorize important knowledge about system pro
 
  - `fork()` create a new process by copying the system-data segment from the old process, child receives a 0 on success return and parent receives the process-ID of the child. Then the child usually does an exec and the parent either waits or do something else.
 	 - Several things that are not inherited by the child process:
-		 - pid (废话）
+		 - pid
 		 - if the parent is multiprocess, only the one calling fork() exists on child
 		 - same file description but different file descriptor
 		 - execution time
